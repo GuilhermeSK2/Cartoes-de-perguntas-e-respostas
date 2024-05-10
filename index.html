@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartões perguntas e respostas</title>
+    <link rel="shortcut icon" href="./icons8-cartões-de-banco-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h1>Cartões Rápidos</h1>
+                <div>
+                    <button onclick="showCreateCardBox()">Novo Cartão</button>
+                    <button onclick="delFlashcards()">Deletar Cartão</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="create-box">
+            <h2>Criar Cartão Rápido</h2>
+            <label for="question">Pergunta</label>
+            <textarea id="question"></textarea>
+            <br>
+            <label for="answer">Resposta</label>
+            <textarea id="answer"></textarea>
+            <div>
+                <button onclick="addFlashcard()">Salvar</button>
+                <button onclick="hideCreateBox()">Fechar</button>
+            </div>
+        </div>
+        <div class="flashcards">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
